@@ -35,9 +35,13 @@ function createIndex () {
 
 function createFiles (n) {
   for (let i = 0; i < n; i++) {
-    const CONTENT = `'use strict'
+    const CONTENT = `'use strict';
 
-console.log(${i})
+function alecFoo () {
+  return 1 + ${i};
+}
+
+module.exports = alecFoo;
 `;
     fs.writeFileSync(path.join(__dirname, `foo/${i}.js`), CONTENT);
   }
@@ -53,10 +57,18 @@ const alec${i} = require('./foo/${i}.js');`;
   }
 }
 
-createFooDirectory();
-createFiles(10000);
-requireAll(10000);
-
-console.time('alec-foo');
-require('./index');
-console.timeEnd('alec-foo');
+if (process.argv.length === 3) {
+  let foo = process.argv[2];
+  if (!isNaN(Number(foo))) {
+    createFooDirectory();
+    createFiles(foo);
+    requireAll(foo);
+    console.log('Run: node bench');
+  } else {
+    console.log('Error: This is not a number.');
+  }
+} else {
+  console.log('Usage: node alec-foo 100 (for 100 requires)');
+  console.log('Usage: node alec-foo 1000 (for 1k requires)');
+  console.log('Usage: node alec-foo 10000 (for 10k requires)');
+}
