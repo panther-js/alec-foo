@@ -2,7 +2,7 @@
 
 Tests with require().
 
-How much time do some requires on your disk?
+How much time do some requires with your disk [ssd / sata] ?
 
 ## 1 Run:
 
