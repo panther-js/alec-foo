@@ -2,15 +2,22 @@
 
 Tests with require().
 
-1. Run:
+How much time do some requires on your disk?
 
-`node alec-foo 100`
+## 1 Run:
+
+```
+node alec-foo 100
 
 or 
 
-`node alec-foo 5000`
+node alec-foo 5000
+```
 
-2. Run:
+## 2 Run:
 
-`node bench`
+```
+node bench
+```
 
+![Alt a](https://github.com/panther-js/alec-foo/raw/master/a.png)
