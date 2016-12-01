@@ -20,7 +20,11 @@ node alec-foo 5000
 node bench
 ```
 
-SSD disk:
+
+![Alt c](https://github.com/panther-js/alec-foo/raw/master/c.png)
+
+
+## SSD disk:
 
 ![Alt a](https://github.com/panther-js/alec-foo/raw/master/a.png)
 
@@ -35,7 +39,7 @@ user	0m0.003s
 sys	0m0.047s
 ```
 
-SATA disk:
+## SATA disk:
 
 ![Alt b](https://github.com/panther-js/alec-foo/raw/master/b.png)
 
