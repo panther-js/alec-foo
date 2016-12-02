@@ -7,17 +7,25 @@ How much time do some requires with your disk [ssd / sata] ?
 ## 1 Run:
 
 ```
-node alec-foo 100
+node alec-foo number
 
-or 
+example:
 
+node alec-foo 15
 node alec-foo 5000
+node alec-foo 42
 ```
 
 ## 2 Run:
 
 ```
 node bench
+```
+
+Or 
+
+```
+node alec-foo 159 ; node bench
 ```
 
 
