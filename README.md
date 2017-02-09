@@ -1,5 +1,7 @@
 # alec-foo
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/panther-js/alec-foo.svg)](https://greenkeeper.io/)
+
 Tests with require().
 
 How much time do some requires with your disk [ssd / sata] ?
