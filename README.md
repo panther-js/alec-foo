@@ -30,5 +30,5 @@ node alec-foo 159 ; node bench
 
 The test bellow creates 5000 .js files and `require()` all of them.
 
-![Alt c](https://github.com/panther-js/alec-foo/raw/master/c.png)
+![Alt c](https://github.com/panther-js/alec-foo/raw/master/c10.png)
 
